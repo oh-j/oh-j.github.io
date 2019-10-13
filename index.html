@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<!--Favicon Link-->
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jung Oh</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!--Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+      /*COLORS Orange - FE9165 */
+
+      * {
+		transition: all 500ms ease-out;
+		-webkit-transition: all 500ms ease-out;
+}
+
+html,
+body,
+section,
+.page {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+		-webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+		color: #fff;
+		background: #444444;
+		overflow: hidden;
+		top: 0;
+		bottom: 0;
+		
+}
+
+/*orange color hex #FE9165*/
+
+section {
+		width: 400%;
+}
+
+.page {
+		position: absolute;
+}
+
+#p1 {
+		left: 0;
+		background: url('images/page1.png');
+}
+
+#p2 {
+		left: 100%;
+		background: url('images/page2.png');
+}
+
+#p3 {
+		left: 200%;
+		background: url('images/page3.png');
+}
+
+#p4 {
+		left: 300%;
+		background: url('images/page4.jpg');
+}
+
+ul {
+		position: fixed;
+		z-index: 1;
+}
+
+#t1:target .page#p1 {
+		transform: translateX(0);
+}
+
+#t2:target .page#p2 {
+		transform: translateX(-93%);
+}
+
+#t3:target .page#p3 {
+		transform: translateX(-193%);
+}
+
+#t4:target .page#p4 {
+		transform: translateX(-293%);
+}
+
+#t2:target .page#p1,
+#t3:target .page#p1,
+#t4:target .page#p1 {
+		background: #444444;
+}
+
+#t2:target .page#p1 .icon,
+#t3:target .page#p1 .icon,
+#t4:target .page#p1 .icon {
+		-webkit-filter: blur(3px);
+		filter: blur(3px);
+}
+
+.icon {
+		color: #fff;
+		font-size: 32px;
+		display: block;
+}
+
+ul .icon:hover {
+		opacity: 0.35;
+}
+
+#p1 .icon .title {
+		margin-bottom: 20px;
+}
+
+#t2:target ul .icon,
+#t3:target ul .icon,
+#t4:target ul .icon {
+		transform: scale(.6);
+		transition-delay: .25s;
+}
+
+#t2:target #dos {
+		transform: scale(1.2) !important;
+}
+
+#t3:target #tres {
+		transform: scale(1.2) !important;
+}
+
+#t4:target #cuatro {
+		transform: scale(1.2) !important;
+}
+
+ul {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		/*right: 0;*/
+		
+		margin: auto;
+		height: 280px;
+		width: 7%;
+		padding: 0;
+		text-align: center;
+}
+
+ul li {
+		margin: 30px 0;
+}
+
+a {
+		text-decoration: none;
+		font-family: Quicksand, sans-serif;
+		font-size: 18px;
+		color: white;
+}
+
+.title,
+.hint {
+		font-family: Quicksand, sans-serif;
+		display: block;
+}
+
+.title {
+		font-family: Quicksand, sans-serif;
+		font-size: 38px;
+}
+
+.letterspace {
+		letter-spacing: 10px;
+		margin-right: -4%;
+}
+
+.centering {
+		top: 50%;
+    	left: 50%;
+    	margin-right: -50%;
+}
+
+.fa-center {
+	display:inline-block;
+    line-height: 50px;
+    background-color:black;
+    color:white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.hint {
+		font-size: 15px;
+		font-weight: 800;
+}
+
+.hint a {
+		color: white;
+		transition: all 250ms easet-out;
+}
+
+.homeright{
+	right: 0;
+}
+
+.right {
+	right: 10%;
+}
+
+.page .icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 700px;
+		margin: auto;
+		top: 0; bottom: 0; right: 0; left: 0;
+		text-align: center;
+		font-size: 80px;
+		transform: translateX(360%);
+		line-height: 1.3;
+		right: 10%;
+}
+
+.page#p1 .icon {
+		height: 220px;
+}
+
+.page#p1 .icon {
+		transform: translateX(0) !important;
+}
+
+#t2:target .page#p2 .icon {
+		transform: translateX(0) !important;
+		transition-delay: 1s;
+}
+
+#t3:target .page#p3 .icon {
+		transform: translateX(0) !important;
+		transition-delay: 1s;
+}
+
+#t4:target .page#p4 .icon {
+		transform: translateX(0) !important;
+		transition-delay: 1s;
+}
+
+.credit {
+		position: absolute;
+		margin: auto;
+		bottom: 0; right: 0;
+		width: 140px;
+		height: 20px;
+		text-align: center;
+		font-size: 12px;
+		font-weight: 100;
+}
+
+.credit a {
+		color: #fff
+}
+
+a:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #2ACA9A;
+    text-decoration: none;
+}
+
+/*FirstPage*/
+
+.page .newclass {
+	position: absolute;
+		top: 0;
+		left: 0;
+		width: 400px;
+		height: 170px;
+		margin: auto;
+		top: 0; left: 0; bottom: 0; right: 0;
+		text-align: center;
+		font-size: 80px;
+		line-height: 1.3;
+}
+
+
+/*ABOUT ME*/
+.aboutstyle {
+	font-family: Quicksand;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.skillstyle {
+	font-family: Quicksand;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.linkdescription {
+	font-size: 15px;
+	font-weight: 600;
+	color: #C7C7C7;
+}
+
+.blockdesc {
+	font-weight: 600;
+	font-size: 19px;
+}
+
+.firstpagelinks {
+	font-size: 15px;
+}
+
+.page4width {
+	width: 400px;
+}
+
+.page2width {
+	width: 650px;
+}
+/*portfolio grid*/
+
+/*#imagelist {
+	font-size: 0;
+	width: 50%;
+	margin: auto;
+	margin-right: 30%;
+}
+
+#imagelist a {
+	margin: 2px;
+	border: 4px solid transparent;
+	display: inline-block;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+}
+
+#imagelist a:hover {
+	border-color: #2ACA9A;
+	opacity: 1
+}
+
+#imagelist img {
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+}*/
+
+
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <div class="ct" id="t1">
+		<div class="ct" id="t2">
+				<div class="ct" id="t3">
+						<div class="ct" id="t4">
+								<section>
+										<ul>
+												<a href="#t1">
+														<li class="icon fa fa-gg" id="uno"></li>
+												</a>
+												<a href="#t2">
+														<li class="icon fa fa-file-text-o" id="dos"></li>
+												</a>
+												<a href="#t3">
+														<li class="icon fa fa-folder-open-o" id="tres"></li>
+												</a>
+												<a href="#t4">
+														<li class="icon fa fa-photo" id="cuatro"></li>
+												</a>
+										</ul>
+										<div class="page" id="p1">
+												<li class="fa fa-gg homeright newclass"><span class="title letterspace">JUNG OH</span>
+													<span class="hint">URBAN PLANNER & GIS ANALYST<p></span><span class="hint hoverline"><a class="firstpagelinks" href="https://ca.linkedin.com/in/ohjung" target="_blank">linkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+													<a class="firstpagelinks" href="https://instagram.com/jungleoh/"target="_blank">Instagram</a></li></span></p>
+
+										</div>
+										<div class="page" id="p2">
+												<li class="icon fa right page2width p2color fa-file-text-o"><span class="title">About Me</span>
+												<div class="aboutstyle"><br>
+												Hello, I'm on the road to becoming an Urban Planner. What kind of planner you ask? I'm not entirely sure. I can only tell you with confidence that my interests lie in producing aesthetically pleasing and/or socially beneficial products. In this context the word "products" can be read as concepts, ideas, services, tangible goods, or any combination of the aforementioned.
+												<br><br>
+												I love to participate in problem solving/design compeitions to create innovate solutions for complex issues, and thrive off of sharing and absorbing new information with others. I'm currently participating in the Biomimicry Global Design Challenge hosted by the Biomimicry Institute with my excellent friend Vivian Ho.
+												<br><br>
+												If youre participating in a competition that you think I may be able to help you with, please do not hesitate to send me a message! I'm always on the lookout for a good challenge.
+												<br><br>
+												I would also enjoy the opportunity to view your website and perhaps talk to good people about cool things. If you have a website to show or wish to have a chat, once again, send over a message!
+												<br><br>
+												All the best,<br>
+												Jung Oh
+											</div>
+												</li>
+
+										</div>
+										<div class="page" id="p3">
+												<li class="icon fa right p3color fa-folder-open-o"><span class="title">Skills and Interests</span>
+													<div class="skillstyle">
+														<br>Skills
+														<br><br>
+														Unix |
+													Html |
+													ArcGIS |
+													Illustrator |
+													Photoshop |
+													Cinema 4D |
+													MS Office
+													<br><br>
+													Interests
+													<br><br>
+													Cycling | Mountain Biking | Rock Climbing
+													<br>
+													Design | Architecture | New Ideas
+
+													<br><br>
+													School
+													<br><br>
+														University of Waterloo 2015<br>Honours Urban Planning<br>Diploma of Excellence in GIS
+														<br><br>
+													
+
+
+													</div>
+												</li>
+										</div>
+										<div class="page" id="p4">
+												<li class="icon fa right p4color page4width fa-photo"><span class="title">Portfolio</span>
+													<span class="hint">
+														<div class="blockdesc">Take a Moment to Enjoy my Portfolio.
+														</div>
+													<br>
+													<br>
+													<br>
+													<a class="blockdesc" href="portimage/projectnova.png" target="_blank">・Project Nova
+														<br>
+														<div class="linkdescription"><br>NXT City Prize 2015 Design Competition Submission</div>
+														<br>
+													<a class="blockdesc" href="portimage/officerender.png" target="_blank">・Cinema 4D Render
+													<br>
+													<div class="linkdescription"><br>Labelled map of the Mappedin Inc. offices in Waterloo, Ontario</div>
+													<br>
+													<a class="blockdesc" href="portimage/elev.png" target="_blank">・Elevation Diagram
+														<br>
+														<div class="linkdescription"><br>King St. - Victoria St. Waterloo Intersection Redesign Assignment</div>
+														<br>
+													<a class="blockdesc" href="portimage/carrender.png" target="_blank">・Artlantis Render
+														<br>
+														<div class="linkdescription"><br>Ed Bacon Memorial Urban Design Competition Submission Render</div>
+													</span>
+
+												</li>
+
+												<!--<div id="imagelist"> 
+													<a href="images/a.png"><img src="images/a.png" alt="imagea">
+													<a href="images/b.png"><img src="images/b.png" alt="imageb">
+													<a href="images/c.png"><img src="images/c.png" alt="imagec">
+													<a href="images/d.png"><img src="images/d.png" alt="imaged">
+													<a href="images/e.png"><img src="images/e.png" alt="imagee">
+													<a href="images/f.png"><img src="images/f.png" alt="imaged">
+												</div>-->
+
+
+
+										</div>
+										<p class="credit"><a href="put link here"></a></p>
+								</section>
+							<p><a class="credit" href="function coming soon">Send Jung a Message</a></p>
+						</div>
+				</div>
+		</div>
+</div>
+    
+    
+    
+    
+    
+  </body>
+</html>
